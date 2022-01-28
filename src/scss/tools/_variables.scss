@@ -1,0 +1,67 @@
+:root {
+     // Fonts
+     --font-sans: "Readex Pro", sans-serif;
+     --font-serif: "PT Serif", serif;
+
+     // Change here to change font-sizes
+     --font-base: 1rem;
+     --font-scale: 1.25;
+
+     --font-size-small: calc(var(--font-base) / var(--font-scale));
+     --font-size-1: var(--font-base);
+     --font-size-2: calc(var(--font-size-1) * var(--font-scale));
+     --font-size-3: calc(var(--font-size-2) * var(--font-scale));
+     --font-size-4: calc(var(--font-size-3) * var(--font-scale));
+     --font-size-5: calc(var(--font-size-4) * var(--font-scale));
+     --font-size-6: calc(var(--font-size-5) * var(--font-scale));
+
+     --letter-spacing: 0.1em;
+     // Colors
+     --color-accent: #00cec6;
+     //   --color-accent-light: #eceef2;
+     --color-light: #fff;
+     // --color-lighter: #888;
+     --color-gray-100: #262626;
+     --color-gray-200: #333;
+     --color-gray-300: #6a6a6a;
+     --color-gray-400: #979797;
+
+     // Sections Gaps
+     --section-gap: 8rem;
+     --section-gap-inner: calc(var(--section-gap) * 0.75);
+     --section-gap-inner-small: calc(var(--section-gap) * 0.5);
+
+     // Grid Gaps
+     --grid-gap: 3rem;
+
+     // Gaps
+     --gap-small: 1rem;
+     --gap-medium: 2rem;
+     --gap-large: 3rem;
+     --gap-xl: 4rem;
+
+     // Page Settings
+     --page-width: 78rem;
+     --page-padding: 30px;
+
+     // Content Settings
+     --content-width: 55rem;
+     --content-width-small: 40rem;
+
+     // Menu Settings
+     --menu-height: 110px;
+
+     /* Out Grid */
+     --grid-container: minmax(var(--page-padding), 1fr) [inner-start]
+          minmax(0, var(--page-width)) [inner-end]
+          minmax(var(--page-padding), 1fr);
+     --grid-content: repeat(12, 1fr);
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     font-family: var(--font-sans);
+     font-size: var(--font-size-1);
+     color: var(--color-dark);
+}
