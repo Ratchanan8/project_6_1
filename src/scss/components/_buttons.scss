@@ -2,19 +2,30 @@
      $background: var(--color-accent),
      $color: var(--color-light),
      $border-radius: 10px,
-     $hover: var(--color-dark)
+     $hover: var(--color-gray-400),
+     $size: small
 ) {
      background-color: $background;
      color: $color;
      display: inline-block;
      text-decoration: none;
-     padding: 1rem 1.5rem;
      border-radius: $border-radius;
-     font-size: var(--font-size-1);
      font-family: var(--font-sans);
+     text-transform: uppercase;
+     letter-spacing: var(--letter-spacing);
+     font-weight: 600;
      border: 0;
      cursor: pointer;
+     white-space: nowrap;
      &:hover {
           background-color: $hover;
+     }
+
+     @if $size == small {
+          padding: 1rem 2rem;
+          font-size: var(--font-size-small);
+     } @else {
+          padding: 1.5rem 3rem;
+          font-size: var(--font-size-1);
      }
 }
