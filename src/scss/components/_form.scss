@@ -1,0 +1,10 @@
+@mixin input($border-radius: 0, $color: var(--color-light)) {
+     background-color: var(--color-gray-200);
+     font-size: var(--font-size-1);
+     font-weight: 700;
+     color: $color;
+     padding: 0.5rem 1rem;
+     border: 0;
+     font-family: var(--font-sans);
+     border-radius: $border-radius;
+}
