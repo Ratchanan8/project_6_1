@@ -2,6 +2,7 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
    // direction: 'vertical',  // ลบทิ้ง
     loop: true,
+    parallax:true,
   
     // If we need pagination
     pagination: {

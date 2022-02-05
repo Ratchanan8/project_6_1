@@ -22,8 +22,8 @@
           text-transform: uppercase;
           color: var(--color-gray-100);
           text-align: center;
-          top: 59%; // สองบรรทัดนี้ทำให้อักษรพื้นหลังลงมาตรงกลางพอดี
-          transform: translateY(-50%);
+          //top: 50%; // สองบรรทัดนี้ทำให้อักษรพื้นหลังลงมาตรงกลางพอดี
+          //transform: translateY(-50%);
      }
 
      &__image {
@@ -35,5 +35,9 @@
 
      .swiper {
           width: 100%;
+
+          &-slide {
+               overflow: hidden;
+          }
      }
 }
