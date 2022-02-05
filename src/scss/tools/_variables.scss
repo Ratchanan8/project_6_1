@@ -42,7 +42,7 @@
 
      // Page Settings
      --page-width: 78rem;
-     --page-padding: 30px;
+     --page-padding: 3rem;
 
      // Content Settings
      --content-width: 55rem;
@@ -51,17 +51,17 @@
      // Menu Settings
      --menu-height: 110px;
 
-     /* Out Grid */
+     /* Grid */
      --grid-container: minmax(var(--page-padding), 1fr) [inner-start]
           minmax(0, var(--page-width)) [inner-end]
           minmax(var(--page-padding), 1fr);
      --grid-content: repeat(12, 1fr);
 }
 
-body {
-     margin: 0;
-     padding: 0;
-     font-family: var(--font-sans);
-     font-size: var(--font-size-1);
-     color: var(--color-dark);
-}
+//body {
+//    margin: 0;
+//    padding: 0;
+//    font-family: var(--font-sans);
+//    font-size: var(--font-size-1);
+//    color: var(--color-dark);
+//}

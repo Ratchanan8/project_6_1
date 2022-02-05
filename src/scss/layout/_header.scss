@@ -1,0 +1,56 @@
+@use "../components/buttons" as button;
+.header {
+     height: var(--menu-height);
+     display: grid;
+     grid-template-columns: var(--grid-container);
+
+     &__inner {
+          grid-column: inner;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
+
+     &__buttons {
+          display: flex;
+          align-items: center;
+     }
+}
+
+.branding {
+     display: flex;
+}
+
+.cart {
+     @include button.standard(
+          $background: var(--color-gray-300),
+          $border-radius: 30px
+     );
+     position: relative; // parent
+
+     &__counter {
+          position: absolute; // baby
+          width: 24px;
+          height: 24px;
+          background-color: var(--color-accent);
+          border-radius: 50%;
+
+          line-height: 24px;
+          text-align: center;
+
+          //หรือจะใช้สามบรรทัดนี้แทน  line-height: 24px; text-align: center; ก็ได้
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+
+          right: 0;
+          bottom: -11px;
+
+          // display: grid;
+          // place-items: center;
+
+          //  display: flex;
+          // justify-content: center;
+          // align-items: center;
+     }
+}
