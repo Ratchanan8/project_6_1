@@ -5,8 +5,32 @@
 
      &__inner {
           display: grid;
-          background-color: red;
           margin-top: var(--menu-height);
+          margin-bottom: var(--gap-xl);
+     }
+
+     &__content {
+          display: flex;
+          justify-content: center; // กระเป๋าไปอยู่กลางจอแล้ว  สัมพันธ์กับ  &__image {position: relative; ข้างล่าง
+          align-items: center;
+     }
+
+     &__bgtext {
+          position: absolute;
+          font-size: 7.5vw;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: var(--color-gray-100);
+          text-align: center;
+          top: 59%; // สองบรรทัดนี้ทำให้อักษรพื้นหลังลงมาตรงกลางพอดี
+          transform: translateY(-50%);
+     }
+
+     &__image {
+          position: relative; // อักษรพื้นหลัง ไปอยู่ข้างหลัง
+          img {
+               max-height: 80vh;
+          }
      }
 
      .swiper {
