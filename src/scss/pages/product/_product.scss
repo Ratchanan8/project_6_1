@@ -39,5 +39,32 @@
           &-slide {
                overflow: hidden;
           }
+          &-pagination {
+               align-items: left; // ให้จุดสี่น้ำเงินไว้ด้านซ้าย
+               left: var(--gap-large);
+               bottom: 0;
+
+               --swiper-pagination-bullet-size: 11px; // ขนาดของจุดน้ำเงิน
+               --swiper-pagination-bullet-inactive-color: var(
+                    --color-gray-100
+               ); // สีของจุดที่เหลือ อันล่างด้วย
+               --swiper-pagination-bullet-inactive-opacity: 1;
+               --swiper-pagination-color: var(
+                    --color-light
+               ); // ตอนนี้จุดที่บอกสินค้าเป็นสีนี้แล้ว ไม่เอาน้ำเงิน
+          }
+
+          &__arrow {
+               position: absolute;
+               top: 50%;
+               transform: translateY(-50%);
+               left: var(--gap-large);
+               z-index: 2; //
+               cursor: pointer;
+               &--next {
+                    left: auto;
+                    right: var(--gap-large);
+               }
+          }
      }
 }
