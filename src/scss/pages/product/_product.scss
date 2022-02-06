@@ -24,6 +24,7 @@
           text-align: center;
           //top: 50%; // สองบรรทัดนี้ทำให้อักษรพื้นหลังลงมาตรงกลางพอดี
           //transform: translateY(-50%);
+          opacity: 0.6;
      }
 
      &__image {
@@ -31,6 +32,14 @@
           img {
                max-height: 80vh;
           }
+     }
+
+     &__share {
+          position: absolute;
+          right: var(--gap-large);
+          bottom: var(--gap-xl);
+          font-size: var(--font-size-small);
+          z-index: 2;
      }
 
      .swiper {
